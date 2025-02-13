@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Work Sans", serif;
+    margin: 0px;
+}
+.header{
+	background-image: url(./assets/14.jpg);
+    width:100%;
+    height:200px;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.navbar ol {
+    display: flex; /* elementi nav orizzontale */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* rimuove i pallini dalla lista */
+}
+
+.navbar .list {
+    margin: auto;/* spazio tra gli elementi della lista */
+}
+
+.navbar .nav-link {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* transizione */
+}
+
+/* mousehover sulla nav */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active {
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    border: 1px solid #000;
+    padding: 10px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu {
+	padding-left: 20%;
+    padding-top: 0px;
+    padding-right: 20%;
+    padding-bottom: 150px;
+}
+
+.footer {
+    width:100%;
+    position:fixed;
+    bottom: 0px;
+    padding: 5px;
+    text-align: center;
+	line-height: 1.6;
+	font-size: small;
+	background-color: black;
+	color: beige;
+}
+
+.text {
+	padding-left: 20%;
+    padding-top: 0px;
+    padding-right: 20%;
+    padding-bottom: 150px;
+    text-align: justify;
+}
+
+.contacts {
+	padding-top: 40px;
+}
+
+.gallery {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: mandatory;
+	-webkit-overflow-scrolling: touch;
+	gap: 10px;
+}
+
+.gallery img {
+	width: 30%;
+	height: auto;
+	object-fit: cover;
+	scroll-snap-align: start;
+	transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+	transform: scale(1.1);
+	/* mousehover ingrandisce temporaneamente l'immagine */
+}
